@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:car/account.dart';
 import 'package:car/expense.dart';
 import 'package:car/trip.dart';
 import 'package:flutter/cupertino.dart';
@@ -175,6 +176,16 @@ class HomeScreen extends State<homePage> {
           onTap: ((value) {
             setState(() {
               _index = value;
+              switch (value) {
+                case 0:
+                  break;
+                case 1:
+                  break;
+                case 2:
+                  Get.to(const AccountPage());
+                  break;
+                default:
+              }
             });
           }),
           selectedItemColor: const Color.fromARGB(255, 171, 97, 255),
